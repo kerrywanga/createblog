@@ -11,7 +11,9 @@ app.set("view engine", "ejs");
 // If you are using a different folder instead of one named views
 // app.set("views", "myviews")
 // Listen to a port
-mongoose.connect("mongodb://localhost/anotherblog")
+// mongodb+srv://kerrywa:<password>@cluster0.grenjph.mongodb.net/
+// mongoose.connect("mongodb://localhost/anotherblog")
+mongoose.connect("mongodb+srv://kerrywa:ePfIPOMN6Y4Clgy2@cluster0.grenjph.mongodb.net/")
 .then(()=>{
     app.listen(process.env.PORT) ;
 })
