@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 // Listen to a port
 mongoose.connect("mongodb://localhost/anotherblog")
 .then(()=>{
-    app.listen(3200) ;
+    app.listen(process.env.PORT || 3200) ;
 })
 .catch((err)=>console.log(err));
 
